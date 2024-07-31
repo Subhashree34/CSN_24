@@ -1,0 +1,179 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevents scrolling when the menu is open */
+}
+
+.navbar {
+  background-color: #fffcfc;
+  position: relative;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed; /* Make the menu fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full screen */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%); /* Start off-screen */
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.navbar ul.show {
+  transform: translateY(0); /* Move into view */
+}
+
+.navbar ul li {
+  margin: 20px 0;
+}
+
+.navbar ul li a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 40px; /* Larger font size for full-screen menu */
+  font-weight: 750;
+  text-align: left;
+}
+
+.navbar ul li a:hover {
+  color: darkred;
+  letter-spacing: 6px;
+}
+
+.menu-icon {
+  display: block;
+  color: white;
+  font-size: 30px;
+  padding: 14px 16px;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+}
+
+.close-icon {
+  display: none;
+  color: black;
+  font-size: 30px;
+  padding: 14px 16px;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1001;
+}
+
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('Index Backgound.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+}
+
+.background-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, black 0%, transparent 50%, black 100%);
+  opacity: 1.8; /* Adjust the opacity as needed */
+}
+body {
+  margin: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Blink-182 {
+  text-align: right;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 85px;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+  margin-right: 15px;
+  margin-top: 150px;
+  letter-spacing: 7px;
+}
+.Content{
+  font-family: "Playwrite AR", cursive;
+  position: relative;
+  z-index: 3;
+  color: white; /* Adjust text color for visibility */
+  text-align: right;
+  padding: 20px;
+  margin-top: -85px;
+}
+.Sub-Title {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Playwrite AR", cursive;
+  font-weight: bold;
+}
+.Menu {
+  background: lightgray;
+  overflow: hidden;
+}
+.wave {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 73px;
+}
+
+.wave .shape-fill {
+  fill: lightgray;
+}
+p {
+  color: white;
+  font-size: 130%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.social-icons {
+  display: flex;
+  justify-content:left;
+  gap: 15px; /* Space between social icons */
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
